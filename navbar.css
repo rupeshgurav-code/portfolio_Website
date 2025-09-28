@@ -1,0 +1,71 @@
+/* 🧼 Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #000000, #3d3d3d);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 🚀 Logo styling */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 📋 Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f0f4f8;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-logo {
+    margin-bottom: 0.5rem;
+  }
+}
+/* Active link styling */
+.nav-links li .active {
+  color: #f0f4f8;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}

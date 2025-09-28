@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+.content{
+    margin: 50px;
+    width: 50%;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgb(0, 0, 0);
+    height: 40vh;
+   text-align: center;
+   box-shadow: 2px 3px 1px black;
+}
+.content h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content span{
+   
+    font-style: oblique;
+}
+.image{
+ width: 20%;
+ margin: 20px;
+ border: 1px solid black;
+
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,105 @@
+/* Reset and base styles */
+body, html {
+
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ede0fc, #cfdef3);
+  
+}
+
+/* Container with glassmorphism effect */
+.contact-container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heading styles */
+.contact-container h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Paragraph */
+.contact-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Form styles */
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 2px #0077b5;
+}
+
+/* Button with hover animation */
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #0077b5, #005582);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

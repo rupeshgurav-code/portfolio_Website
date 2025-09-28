@@ -1,0 +1,162 @@
+/* 🔄 Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+/* 🧠 Skill section wrapper */
+.skill {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 👋 Intro section */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #0077b5;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8rem;
+}
+
+/* 💻 Logo section */
+.log {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.log img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.log img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎯 Goal section layout */
+.goal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* 🖼️ Goal image */
+.goalimg {
+  flex: 1 1 40%;
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease;
+}
+
+.goalimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 📝 Goal content */
+.Gcontent {
+  flex: 1 1 50%;
+  animation: slideUp 1s ease;
+}
+
+.Gcontent h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.goal-section h2 {
+  color: #0077b5;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.goal-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.goal-section ul li {
+  background: #f0f4f8;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.goal-section ul li:hover {
+  background: #e6f0fa;
+}
+
+/* 📱 Responsive layout */
+@media (max-width: 768px) {
+  .goal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Gcontent {
+    padding: 0;
+  }
+
+  .goalimg {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .intro p {
+    padding: 0 1rem;
+  }
+}

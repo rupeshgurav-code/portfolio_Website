@@ -1,0 +1,73 @@
+/* Footer base */
+.bott {
+  background: linear-gradient(135deg, #000000, #000000);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Footer content layout */
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #f0f4f8;
+}
+
+/* Copyright */
+.footer-content .copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .footer-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.3rem;
+  }
+}
